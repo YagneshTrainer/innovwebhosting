@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Roadmap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .roadmap {
+            position: relative;
+            width: 80%;
+            height: 500px;
+        }
+
+        .step {
+            position: absolute;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            width: 150px;
+        }
+
+        .step1 { top: 50px; left: 10%; }
+        .step2 { top: 120px; left: 30%; }
+        .step3 { top: 190px; left: 50%; }
+        .step4 { top: 260px; left: 70%; }
+        .step5 { top: 330px; left: 50%; }
+        .step6 { top: 400px; left: 30%; }
+        .step7 { top: 470px; left: 10%; }
+
+        .zigzag-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-left: 3px solid black;
+            transform-origin: top left;
+        }
+
+        .zigzag-line::before {
+            content: '';
+            position: absolute;
+            top: 50px; 
+            left: 10%; 
+            width: 0;
+            height: 0;
+            border: solid transparent;
+            border-width: 15px;
+            border-left-color: black;
+            transform: rotate(45deg);
+            animation: zigzag-animation 6s infinite linear;
+        }
+
+        @keyframes zigzag-animation {
+            0% { transform: translateX(0) rotate(45deg); }
+            25% { transform: translateX(20px) rotate(135deg); }
+            50% { transform: translateX(40px) rotate(45deg); }
+            75% { transform: translateX(60px) rotate(135deg); }
+            100% { transform: translateX(80px) rotate(45deg); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="roadmap">
+        <div class="step step1">Step 1: Learn DevOps Basics</div>
+        <div class="step step2">Step 2: Version Control (Git)</div>
+        <div class="step step3">Step 3: CI/CD Pipelines</div>
+        <div class="step step4">Step 4: Cloud Platforms</div>
+        <div class="step step5">Step 5: Automation</div>
+        <div class="step step6">Step 6: Containers (Docker)</div>
+        <div class="step step7">Step 7: Monitoring & Feedback</div>
+
+        <!-- <div class="zigzag-line"></div> -->
+    </div>
+
+</body>
+</html>
