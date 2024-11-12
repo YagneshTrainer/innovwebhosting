@@ -138,33 +138,21 @@ $('.who_list5').waypoint(function() {
   addClass( "animate__animated animate__lightSpeedInRight")
 }, {offset: "80%"})
 
-$('#dev-image').waypoint(function() {
-  $('#dev-image').
+$('.reviewVideo').waypoint(function() {
+  $('.reviewVideo').
   addClass( "animate__animated animate__flipInY")
 }, {offset: "80%"})
 
-$('#projects').waypoint(function() {
-  $('#projects').
+$('.IA1').waypoint(function() {
+  $('.IA1').
   addClass( "animate__animated animate__rollIn")
 }, {offset: "80%"})
-$('#working').waypoint(function() {
-  $('#working').
+$('.IA2').waypoint(function() {
+  $('.IA2').
   addClass( "animate__animated animate__rollIn")
 }, {offset: "80%"})
-$('#job').waypoint(function() {
-  $('#job').
-  addClass( "animate__animated animate__rollIn")
-}, {offset: "80%"})
-$('#live').waypoint(function() {
-  $('#live').
-  addClass( "animate__animated animate__rollIn")
-}, {offset: "80%"})
-$('#lab').waypoint(function() {
-  $('#lab').
-  addClass( "animate__animated animate__rollIn")
-}, {offset: "80%"})
-$('#certificate').waypoint(function() {
-  $('#certificate').
+$('.IA3').waypoint(function() {
+  $('.IA13').
   addClass( "animate__animated animate__rollIn")
 }, {offset: "80%"})
 
